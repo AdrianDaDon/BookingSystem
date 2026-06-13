@@ -1,0 +1,44 @@
+﻿@page "/login";
+
+<PageTitle>Login</PageTitle>
+<div class="container">
+    <form action="/" method="post" class="border border-1 py-5 container-sm mx-auto my-auto">
+        <div>
+            <div class="flex-row">
+                <img src="#" alt="Alternate Text" />
+                <h3>login</h3>
+            </div>
+
+            <div class="mb-5">
+                <div class="form-floating mb-3">
+                    <input id="emailController" class="form-control" type="email" placeholder="you@email.com"/>
+                    <label for="emailController" >Email</label>
+                </div
+
+                <div class="form-floating mb-3">
+                    <input id="passwdController" class="form-control" placeholder="*********"/>
+                    <label for="passwdController">Password</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="rememberCheck" value="Remember Me"/>
+                    <label for="rememberCheck">Remember Me</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-lg btn-outline-primary px-20">Sign In</button>
+        </div>
+    </form>
+    <p>@email</p>
+
+</div>
+
+@code {
+    private string email = "";
+    private string passwd = "";
+
+    public void HandleEmail(ChangeEventArgs e)
+    {
+        this.email = (string)e.Value!;
+    }
+}
