@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\university-of-johannesburg-university-of-the-witwatersrand-auckland-park-technikon-witwatersrand-student.jpg" />
+  </ItemGroup>
+
 </Project>
